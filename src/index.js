@@ -3,11 +3,16 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import List from './components/list';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
+const obj = {items: [{text:"helllo"}, {text:"world"}, {text:"helllo"}, {text:"world"}]}
+
 root.render(
   <React.StrictMode>
-    <App />
+    {/* <App /> */}
+    <List {...obj}/>
   </React.StrictMode>
 );
 
